@@ -17,13 +17,13 @@
     Zorg er voor dat vanuit een style-element volgende CSS wordt gedefinieerd waarin:
 
     - de header van de tabel:
-        - [ ] een blauwe achtergrond heeft
+        - [x] een blauwe achtergrond heeft
     - als over een cel wordt gehoverd, moet de opmaak van de cel veranderen naar:
-        - [ ] een zwarte achtergrond
-        - [ ] een witte tekstkleur
+        - [x] een zwarte achtergrond
+        - [x] een witte tekstkleur
         - je hebt hiervoor het pseudo-element hover nodig
     - goede films (class goodmovie) moeten deze opmaak hebben:
-        - [ ]een groene achtergrondkleur
+        - [x]een groene achtergrondkleur
         - de classes zijn al toegewezen aan de enkele tabel-rijen
     
     - [ ] kies zelf welke films ja als 'goodmovie' aanduidt
@@ -41,12 +41,18 @@
 -->
 
 <head>
+    <style>
+        table td:hover{
+            background-color: black; color: azure;
+        }
+        
+        </style>
     <title>Movies</title>
+    <link rel="style" type="css" href="Main.css">
 </head>
-
-<body>
-<table style="background-color: yellow; width: 100%;color: purple; white-space: nowrap;">
-<tr class="main.css">
+<body bgcolor="#00ff00">
+<table style="background-color: yellow; width: 100%;color: purple; white-space: nowrap">
+<tr style="background-color: blue">
 	<th>id</th>
 	<th>name</th>
 	<th>directory</th>
