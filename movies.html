@@ -26,13 +26,13 @@
         - [x]een groene achtergrondkleur
         - de classes zijn al toegewezen aan de enkele tabel-rijen
     
-    - [ ] kies zelf welke films ja als 'goodmovie' aanduidt
+    - [x] kies zelf welke films ja als 'goodmovie' aanduidt
 
     - [ ] Geef de tabel zelf nog extra layout gebruik makend van het box-model, d.w.z.
-        - [ ] Gebruik geen inline-style!
-        - [ ] Ken padding toe aan bepaalde elementen
-        - [ ] Ken margins toe aan bepaalde elementen
-        - [ ] Pas de border aan van bepaalde elementen, b.v. de tabel-header
+        - [x] Gebruik geen inline-style!
+        - [x] Ken padding toe aan bepaalde elementen
+        - [x] Ken margins toe aan bepaalde elementen
+        - [x] Pas de border aan van bepaalde elementen, b.v. de tabel-header
 
     - [ ] Zorg dat de tabel responsief is (d.w.z. op kleinere schermen een horizontale scrollbar zal tonen indien nodig)
         - Zie hiervoor op w3schools bij Tables of zoek naar het overflow-x-attribuut
@@ -44,10 +44,16 @@
     <style>
         table td:hover{
             background-color: black; color: azure;
+
         }
-        
+        .goodmovie{
+            background-color: green;
+        }
+
+
         </style>
-    <title>Movies</title>
+        
+        <title>Movies</title>
     <link rel="style" type="css" href="Main.css">
 </head>
 <body bgcolor="#00ff00">
@@ -57,7 +63,7 @@
 	<th>name</th>
 	<th>directory</th>
 	<th>year</th>
-	<th>min</th>
+    <th>min</th>
 </tr>
 <tr><td>1</td>
 <td>Cars</td>
@@ -66,6 +72,7 @@
 <td>117</td>
 </tr>
 <tr class="goodmovie"><td>2</td>
+<td>Cars</td>
 <td>Brave</td>
 <td>Brenda Chapman</td>
 <td>2012</td>
@@ -94,12 +101,12 @@
 <td>Pete Docter</td>
 <td>2001</td>
 <td>92</td>
-</tr>
+</tr class = "goodmovie";>
 <tr><td>7</td>
-<td>Cars 2</td>
-<td>John Lasseter</td>
-<td>2011</td>
-<td>120</td>
+    <td>Cars 2</td>
+    <td>John Lasseter</td>
+    <td>2011</td>
+    <td>120</td>
 </tr>
 <tr><td>8</td>
 <td>Up</td>
