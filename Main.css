@@ -1,0 +1,24 @@
+p {
+
+background: #00ff00;
+background-color: blueviolet;
+margin-right: 2px;
+margin-left: 2px;
+
+cursor: crosshair;
+list-style: circle;
+
+}
+
+a:hover {
+    background-color: grey;
+    color: white;
+  }
+
+ul {
+
+    list-style: decimal;
+
+}
+
+
